@@ -1,4 +1,3 @@
-console.log("Game Start");
 
 let choices = ["Rock", "Paper", "Scissors"];
 
@@ -35,7 +34,6 @@ function playRound(humanChoice, computerChoice) {
     else if((humanChoice=="Rock" && computerChoice=="Scissors") || (humanChoice=="Paper" && computerChoice=="Rock") || (humanChoice=="Scissors" && computerChoice=="Paper")){
         hScore++;
         humanScore.innerText = hScore;
-        console.log(`You win!! ${humanChoice} beats ${computerChoice}`);
         dialog.innerText = "You Win The Round!!";
         result.innerText = `${humanChoice} beats ${computerChoice}`;
         catImg.src = "./images/winround.png"
@@ -43,9 +41,8 @@ function playRound(humanChoice, computerChoice) {
     else{
         cScore++;
         computerScore.innerText = cScore;
-        console.log(`You Lose!! ${computerChoice} beats ${humanChoice}`);
         dialog.innerText = "You Lost The Round!!";
-        result.innerText = `${humanChoice} beats ${computerChoice}`;
+        result.innerText = `${computerChoice} beats ${humanChoice}`;
         catImg.src = "./images/loseround.png";
     }
 }
