@@ -1,0 +1,43 @@
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.opt{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat {
+    height: 200px;
+    width: auto;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: blanchedalmond;
+    border: 1px solid burlywood;
+    width: 150px;
+}
+
+.score, .result{
+    text-align: center;
+    font-size: large;
+    margin-top: 20px;
+}
+
